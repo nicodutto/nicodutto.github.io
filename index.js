@@ -201,7 +201,7 @@ function screen2() {
         if (player.hits(gemma)) { 
             suonoGem.play(); 
             gemme.splice(gemme.indexOf(gemma), 1); //RIMUOVO LA GEMMA
-            punteggio.incrementa(); 
+            punteggio.incrementa();
         } 
     }
 
@@ -269,7 +269,6 @@ function screen3() {
         gemma.move(); 
         gemma.show();
         if (player.hits(gemma)) { 
-            vite--;
             if (vite < 1) { 
                 suonoSott.stop(); 
                 suonoSalto.setVolume(0); 
